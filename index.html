@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="draggable-container">
+      <div class="item" draggable="true">Item 1</div>
+      <div class="item" draggable="true">Item 2</div>
+      <div class="item" draggable="true">Item 3</div>
+    </div>
+    <div class="droppable">
+      <p>Drop items here</p>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <p id="success-message" class="success-message" style="display: none;">Item dropped successfully!</p>
+    <button id="reset-btn">Reset</button>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>

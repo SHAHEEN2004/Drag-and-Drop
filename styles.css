@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://wallpaperaccess.com/full/187161.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+      
+      
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    max-width: 100%;
+  }
+  
+  .item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .item:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+  }
+  
+  .droppable {
+    background-color: #ffffff;
+    min-height: 100px;
+    border: 2px dashed #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.3s ease;
+    width: 400px;
+    border-radius: 10px;
+  }
+  
+  .droppable:hover {
+    border-color: #aaaaaa;
+  }
+  
+  .success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    animation: fadeOut 2s ease;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #reset-btn {
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #reset-btn:hover {
+    background-color: #45a049;
+  }
+  
